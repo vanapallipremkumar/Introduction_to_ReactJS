@@ -12,10 +12,14 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module">
-      const elementProps = { className: "greeting", children: "Hello World" };
-      const elementType = "h1";
-      const element = React.createElement(elementType, elementProps);
+    <script type="text/babel">
+      /*
+        const elementProps = { className: "greeting", children: "Hello World" };
+        const elementType = "h1";
+        const element = React.createElement(elementType, elementProps);
+        */
+      // Creating JSX element
+      const element = <h1 className="greeting">Hello World</h1>;
       ReactDOM.render(element, document.getElementById("root"));
     </script>
   </body>
